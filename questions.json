@@ -1,0 +1,30 @@
+[
+    {
+        "question": "What is Phishing?",
+        "answers": [
+            { "text": "A type of malware", "isCorrect": false },
+            { "text": "A method of tricking users into sharing personal info", "isCorrect": true },
+            { "text": "A method of encryption", "isCorrect": false }
+        ],
+        "explanation": "Phishing involves tricking users into providing sensitive information like passwords and credit card details by impersonating a trustworthy entity."
+    },
+    {
+        "question": "What does SSL stand for?",
+        "answers": [
+            { "text": "Secure Sockets Layer", "isCorrect": true },
+            { "text": "Systematic Security Layer", "isCorrect": false },
+            { "text": "Security Socket Layer", "isCorrect": false }
+        ],
+        "explanation": "SSL (Secure Sockets Layer) is a protocol used for securing communication between web servers and browsers."
+    },
+    {
+        "question": "Which of the following is a strong password?",
+        "answers": [
+            { "text": "123456", "isCorrect": false },
+            { "text": "password", "isCorrect": false },
+            { "text": "A1B2C3d4E5F6@", "isCorrect": true }
+        ],
+        "explanation": "A strong password typically includes a combination of uppercase letters, lowercase letters, numbers, and special characters."
+    }
+    // Add more questions as needed
+]

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSafe Quiz</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>CyberSafe Quiz</h1>
+    {% if completed %}
+        <p>Your score: {{ score }}/3</p>
+        <a href="/">Go Home</a>
+    {% else %}
+        <form method="POST" action="/quiz">
+            <p>1. What is phishing?</p>
+            <input type="radio" name="q1" value="a"> Sending emails for fun<br>
+            <input type="radio" name="q1" value="b"> Fraudulent attempt to steal sensitive info<br>
+            <input type="radio" name="q1" value="c"> A type of fishing technique<br>
+
+            <p>2. How often should you update your passwords?</p>
+            <input type="radio" name="q2" value="a"> Regularly<br>
+            <input type="radio" name="q2" value="b"> Never<br>
+            <input type="radio" name="q2" value="c"> Only when forced<br>
+
+            <p>3. What does HTTPS stand for?</p>
+            <input type="radio" name="q3" value="a"> HyperText Protocol Standard<br>
+            <input type="radio" name="q3" value="b"> High-Tech Password Security<br>
+            <input type="radio" name="q3" value="c"> HyperText Transfer Protocol Secure<br>
+
+            <button type="submit">Submit</button>
+        </form>
+    {% endif %}
+</body>
+</html>

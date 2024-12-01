@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+h1, h2 {
+  color: #333;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px;
+}
+.email {
+  background: #fff;
+  border: 1px solid #ddd;
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 5px;
+}

@@ -1,0 +1,10 @@
+version: 1
+services:
+  - type: web
+    name: cyberquest
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    branches:
+      - main
